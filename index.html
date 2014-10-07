@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/main.css">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+		<link rel="stylesheet" href="http://js.arcgis.com/3.10/js/esri/css/esri.css">
+		<script src="http://js.arcgis.com/3.10/"></script>
+		 
+	</head>
+	
+	<body>
+		
+		<div id="map"> 
+		
+		
+		</div>
+		<h2 id="start">Press a Button on Your Controller to Start</h2>
+	
+		
+	
+	
+		<script>
+			var map
+			require(["esri/map", "dojo/domReady!", "esri/config"], function(Map, domReady, esriConfig) {
+				
+				map = new Map("map", {
+				  basemap: "gray",
+				  center: [-0.1147228, 51.5101716], // longitude, latitude
+				  zoom: 13,
+				  smartNavigation: false
+				});
+				
+				esriConfig.defaults.map.panDuration = 750; // time in milliseconds, default panDuration: 25
+				esriConfig.defaults.map.panRate = 1;
+				esri.config.defaults.map.zoomDuration = 1300; //time in milliseconds; default is 750
+				esri.config.defaults.map.zoomRate = 1; //refresh rate of zoom animation; default is 25
+				
+				zoomLevel = 13
+				zoomMin = 0
+				zoomMax = 16
+				zoomBuffer = zoomLevel
+
+			  });
+			  
+		
+			  
+		</script>
+		<script type="text/javascript" src="js/gamepadtest.js"></script>
+	</body>
+</html>
+	

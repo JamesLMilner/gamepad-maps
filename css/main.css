@@ -1,0 +1,45 @@
+	
+	html {
+		height: 100%;
+		width: 100%;
+	
+	}
+	
+	body {
+		background-color: #080808;
+		color: white;
+		font-family: Arial;
+		height: 100%;
+		width: 100%;
+		padding: 0px;
+		margin: 0px;
+	
+	
+	}
+	
+	#map {
+		height: 70%;
+	}
+	
+	#controller0, #start {
+		text-align: center;
+		height: 150px;
+	}
+
+	.buttons, .axes {
+	  padding: 1em;
+	}
+
+	.button {
+	  padding: 1em;
+	  border-radius: 20px;
+	  border: 1px solid black;
+	  background-color: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAAXNSR0IArs4c6QAAAAxJREFUCNdjYPjPAAACAgEAqiqeJwAAAABJRU5ErkJggg==);
+	  background-size: 0% 0%;
+	  background-position: 50% 50%;
+	  background-repeat: no-repeat;
+	}
+
+	.pressed {
+	  border: 1px solid grey;
+	}
