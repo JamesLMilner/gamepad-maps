@@ -1,4 +1,4 @@
-# gamepad-maps
+# Gamepad Maps
 
 Maps that can use the gamepad API for navigation. 
 
